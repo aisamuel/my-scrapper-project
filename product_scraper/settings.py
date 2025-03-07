@@ -17,6 +17,12 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",  # If using React, Vue, or another frontend
+    "http://127.0.0.1:8000",
+    "https://p01--scrapper--b9s647vhp5zt.code.run"
+]
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
